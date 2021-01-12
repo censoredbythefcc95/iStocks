@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav {
+  display: flex;
+  background-color: blue;
+  color: white;
+  justify-content: space-between;
+  font-size: 3em;
+  padding: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/*CSS checkpoint*/
+
+

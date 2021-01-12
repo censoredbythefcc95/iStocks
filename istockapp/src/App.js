@@ -7,10 +7,12 @@ import Home from "./pages/homepage";
 import About from "./pages/aboutpage";
 import Dashboard from "./pages/dashboard";
 import Stock from "./pages/stock";
+import Navigation from "./components/navigation";
 
 function App() {
   return (
     <div className="App">
+      <Navigation />
      <Route path="/">
        <Home />
      </Route>
