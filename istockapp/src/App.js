@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 //import Components and Route
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Home from "./pages/homepage";
 import About from "./pages/aboutpage";
 import Dashboard from "./pages/dashboard";
@@ -13,7 +13,8 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-     <Route path="/">
+      <Switch>
+     <Route exact path="/">
        <Home />
      </Route>
      <Route path="/about">
@@ -25,6 +26,7 @@ function App() {
      <Route path="/stock">
        <Stock />
        </Route>
+       </Switch>
     </div>
   );
 }
