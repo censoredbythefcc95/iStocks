@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 //import Components and Route
@@ -8,6 +7,7 @@ import About from "./pages/aboutpage";
 import Dashboard from "./pages/dashboard";
 import Stock from "./pages/stock";
 import Navigation from "./components/navigation";
+import Stocks from "./pages/stocks";
 
 function App() {
   return (
@@ -23,9 +23,14 @@ function App() {
      <Route path="/dashboard">
        <Dashboard />
      </Route>
-     <Route path="/stock">
-       <Stock />
-       </Route>
+     <Route path="/stocks">
+       <Stocks />
+     </Route>
+     <Route 
+        path="/stock/:symbol"
+        render={(routerProps) => 
+          <Stock {...routerProps} />}
+          />
        </Switch>
     </div>
   );
